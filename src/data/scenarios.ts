@@ -383,5 +383,5 @@ export const SCENARIOS: Scenario[] = [
   },
 ];
 
-export const scenarioById = (id: string) =>
-  SCENARIOS.find((s) => s.id === id) ?? SCENARIOS[0];
+export const scenarioById = (id: string): Scenario =>
+  SCENARIOS.find((s) => s.id === id) ?? (SCENARIOS[0] as Scenario);
